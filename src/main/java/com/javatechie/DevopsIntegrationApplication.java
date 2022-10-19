@@ -14,11 +14,6 @@ public class DevopsIntegrationApplication {
 		return "welcome to javatechie";
 	}
 	
-	@GetMapping
-	public String message(){
-		return "welcome to javatechie";
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(DevopsIntegrationApplication.class, args);
 	}
