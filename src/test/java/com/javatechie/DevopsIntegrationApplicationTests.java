@@ -3,6 +3,9 @@ package com.javatechie;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 @SpringBootTest
 class DevopsIntegrationApplicationTests {
 
