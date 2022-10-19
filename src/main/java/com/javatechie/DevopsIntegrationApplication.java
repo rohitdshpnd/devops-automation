@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DevopsIntegrationApplication {
 
+	@GetMapping("/home")
+	public String message(){
+		return "welcome to javatechie";
+	}
+	
 	@GetMapping
 	public String message(){
 		return "welcome to javatechie";

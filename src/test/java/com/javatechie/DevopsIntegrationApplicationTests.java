@@ -8,6 +8,18 @@ class DevopsIntegrationApplicationTests {
 
 	@Test
 	void contextLoads() {
+		try {
+
+			URL url = new URL("http://localhost:8081/home");
+			HttpURLConnection con = (HttpURLConnection) url.openConnection();
+			con.setRequestMethod("GET");
+			int responseCode = con.getResponseCode();
+			System.out.println("**********************************************************************");
+			System.out.println("GET Response Code :: " + responseCode);
+			System.out.println("**********************************************************************");
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
 	}
 
 }
